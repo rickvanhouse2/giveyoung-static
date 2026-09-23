@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="GiveYoung.org helps young people discover the lasting value of giving, volunteering, and showing up for their communities." />
+    <title>Give Young | Inspiring Involvement</title>
+    <style>
+      :root { --ink: #173c54; --blue: #2588b7; --sky: #e9f7fb; --warm: #f7f3ea; --gold: #f2c94c; --white: #fff; }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: var(--ink); background: var(--warm); font-family: Arial, Helvetica, sans-serif; }
+      a { color: inherit; }
+      .site-header { max-width: 1160px; margin: 0 auto; padding: 28px 28px 0; display: flex; justify-content: space-between; align-items: center; }
+      .brand { color: var(--ink); text-decoration: none; font-weight: 800; font-size: 1.55rem; letter-spacing: -.055em; }
+      .brand span { color: var(--blue); }
+      .foundation { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .72; }
+      main { overflow: hidden; }
+      .hero { max-width: 1160px; min-height: 610px; margin: 0 auto; padding: 86px 10% 88px; position: relative; display: flex; align-items: center; background: linear-gradient(136deg, transparent 0 59%, rgba(37,136,183,.08) 59% 100%); }
+      .hero-copy { position: relative; z-index: 1; max-width: 710px; }
+      .eyebrow { margin: 0 0 20px; color: var(--blue); font-weight: 800; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; }
+      h1, h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.045em; line-height: 1.01; }
+      h1 { margin: 0; font-size: clamp(3.5rem, 8vw, 6.6rem); }
+      .hero p { max-width: 580px; margin: 29px 0 0; color: #31546a; font-size: clamp(1.1rem, 2vw, 1.35rem); line-height: 1.65; }
+      .circle { position: absolute; border-radius: 50%; }
+      .circle.one { width: 370px; height: 370px; right: -65px; top: 82px; background: var(--gold); opacity: .92; }
+      .circle.two { width: 190px; height: 190px; right: 180px; bottom: 62px; background: var(--blue); opacity: .14; }
+      .spark { position: absolute; right: 17%; top: 145px; width: 76px; height: 76px; transform: rotate(45deg); border: 14px solid var(--white); opacity: .76; }
+      .mission { background: var(--ink); color: var(--white); padding: 102px 28px; }
+      .mission-inner { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: minmax(0,1.25fr) minmax(240px,.75fr); gap: 80px; align-items: end; }
+      .mission h2 { margin: 0; font-size: clamp(2.6rem, 5vw, 4.75rem); }
+      .mission p { margin: 0; color: #d4e7ee; font-size: 1.1rem; line-height: 1.7; }
+      .ways { max-width: 1160px; margin: 0 auto; padding: 105px 28px 116px; }
+      .ways h2 { max-width: 660px; margin: 0 0 58px; font-size: clamp(2.55rem, 5vw, 4.3rem); }
+      .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+      .card { min-height: 270px; padding: 30px; background: var(--white); border-top: 7px solid var(--blue); }
+      .card:nth-child(2) { border-top-color: var(--gold); }
+      .card:nth-child(3) { border-top-color: var(--ink); }
+      .card-number { color: var(--blue); font-weight: 800; font-size: .78rem; letter-spacing: .14em; }
+      .card h3 { margin: 52px 0 14px; font-family: Georgia, 'Times New Roman', serif; font-size: 2rem; font-weight: 400; letter-spacing: -.04em; }
+      .card p { margin: 0; color: #587082; line-height: 1.6; }
+      .contact { background: var(--sky); padding: 98px 28px; text-align: center; }
+      .contact h2 { max-width: 790px; margin: 0 auto 24px; font-size: clamp(2.55rem, 5vw, 4.4rem); }
+      .contact p { max-width: 560px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.65; color: #456276; }
+      .contact a { display: inline-block; padding: 15px 22px; background: var(--ink); color: var(--white); text-decoration: none; font-size: .82rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+      .contact a:hover, .contact a:focus-visible { background: var(--blue); }
+      footer { max-width: 1160px; margin: 0 auto; padding: 35px 28px; display: flex; justify-content: space-between; gap: 20px; color: #587082; font-size: .9rem; }
+      @media (max-width: 720px) { .site-header { padding: 21px 22px 0; } .foundation { display: none; } .hero { min-height: 570px; padding: 68px 28px 70px; } .circle.one { width: 250px; height: 250px; right: -115px; top: 45px; } .circle.two { width: 130px; height: 130px; right: 28px; bottom: 35px; } .spark { display: none; } .mission { padding: 75px 28px; } .mission-inner { grid-template-columns: 1fr; gap: 32px; } .ways { padding: 74px 22px 82px; } .cards { grid-template-columns: 1fr; } .card { min-height: 210px; } .card h3 { margin-top: 30px; } .contact { padding: 75px 26px; } footer { padding: 28px 22px; flex-direction: column; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Give Young home">give<span>young</span>.org</a>
+      <div class="foundation">A Van House Foundation initiative</div>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="circle one" aria-hidden="true"></div><div class="circle two" aria-hidden="true"></div><div class="spark" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Inspiring involvement</p>
+          <h1 id="page-title">The habit of giving starts young.</h1>
+          <p>GiveYoung.org helps young people see that generosity is not a someday idea. It is a way to learn, connect, and make a meaningful difference right now.</p>
+        </div>
+      </section>
+      <section class="mission" aria-labelledby="mission-title">
+        <div class="mission-inner">
+          <h2 id="mission-title">Our mission is to make giving and volunteering feel possible, personal, and part of everyday life.</h2>
+          <p>We believe that a young person who discovers the value of showing up for others carries that perspective into their school, work, relationships, and community.</p>
+        </div>
+      </section>
+      <section class="ways" aria-labelledby="ways-title">
+        <p class="eyebrow">A simple idea with lasting impact</p>
+        <h2 id="ways-title">Every act of involvement can become a beginning.</h2>
+        <div class="cards">
+          <article class="card"><div class="card-number">01</div><h3>Notice</h3><p>Pay attention to the people, places, and issues that could use a hand.</p></article>
+          <article class="card"><div class="card-number">02</div><h3>Show up</h3><p>Give time, lend a skill, share resources, or simply become part of the work.</p></article>
+          <article class="card"><div class="card-number">03</div><h3>Keep going</h3><p>Small acts build confidence—and confidence makes service a lifelong habit.</p></article>
+        </div>
+      </section>
+      <section class="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Stay in touch</p>
+        <h2 id="contact-title">We’d love to hear from you.</h2>
+        <p>For questions about GiveYoung.org or The Van House Foundation, please get in touch.</p>
+        <a href="mailto:info@thevanhousefoundation.org">info@thevanhousefoundation.org</a>
+        <p style="margin-top:28px;font-size:.95rem">The Van House Foundation<br>6632 Telegraph Rd #129<br>Bloomfield Hills, MI 48301</p>
+      </section>
+    </main>
+    <footer><span>© <span id="year"></span> GiveYoung.org</span><span>A Van House Foundation initiative</span></footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
