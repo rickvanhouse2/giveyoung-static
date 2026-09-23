@@ -11,8 +11,8 @@
       body { margin: 0; color: var(--ink); background: var(--warm); font-family: Arial, Helvetica, sans-serif; }
       a { color: inherit; }
       .site-header { max-width: 1160px; margin: 0 auto; padding: 28px 28px 0; display: flex; justify-content: space-between; align-items: center; }
-      .brand { color: var(--ink); text-decoration: none; font-weight: 800; font-size: 1.55rem; letter-spacing: -.055em; }
-      .brand span { color: var(--blue); }
+      .brand { display: inline-flex; align-items: center; }
+      .brand img { display: block; width: 150px; max-width: 46vw; height: auto; }
       .foundation { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .72; }
       main { overflow: hidden; }
       .hero { max-width: 1160px; min-height: 610px; margin: 0 auto; padding: 86px 10% 88px; position: relative; display: flex; align-items: center; background: linear-gradient(136deg, transparent 0 59%, rgba(37,136,183,.08) 59% 100%); }
@@ -49,7 +49,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Give Young home">give<span>young</span>.org</a>
+      <a class="brand" href="#top" aria-label="Give Young home"><img src="https://giveyoung.org/wp-content/uploads/give-young-logo-black-copy-e1490116700727.png" alt="GiveYoung.org" /></a>
       <div class="foundation">A Van House Foundation initiative</div>
     </header>
     <main id="top">
@@ -64,7 +64,7 @@
       <section class="mission" aria-labelledby="mission-title">
         <div class="mission-inner">
           <h2 id="mission-title">Our mission is to make giving and volunteering feel possible, personal, and part of everyday life.</h2>
-          <p>We believe that a young person who discovers the value of showing up for others carries that perspective into their school, work, relationships, and community.</p>
+          <p>We believe that a young people who discovers the value of showing up for others carries that perspective into their school, work, relationships, and community.</p>
         </div>
       </section>
       <section class="ways" aria-labelledby="ways-title">
@@ -73,18 +73,18 @@
         <div class="cards">
           <article class="card"><div class="card-number">01</div><h3>Notice</h3><p>Pay attention to the people, places, and issues that could use a hand.</p></article>
           <article class="card"><div class="card-number">02</div><h3>Show up</h3><p>Give time, lend a skill, share resources, or simply become part of the work.</p></article>
-          <article class="card"><div class="card-number">03</div><h3>Keep going</h3><p>Small acts build confidence—and confidence makes service a lifelong habit.</p></article>
+          <article class="card"><div class="card-number">03</div><h3>Keep going</h3><p>Small acts build confidenceâand confidence makes service a lifelong habit.</p></article>
         </div>
       </section>
       <section class="contact" aria-labelledby="contact-title">
         <p class="eyebrow">Stay in touch</p>
-        <h2 id="contact-title">We’d love to hear from you.</h2>
+        <h2 id="contact-title">Weâd love to hear from you.</h2>
         <p>For questions about GiveYoung.org or The Van House Foundation, please get in touch.</p>
         <a href="mailto:info@thevanhousefoundation.org">info@thevanhousefoundation.org</a>
         <p style="margin-top:28px;font-size:.95rem">The Van House Foundation<br>6632 Telegraph Rd #129<br>Bloomfield Hills, MI 48301</p>
       </section>
     </main>
-    <footer><span>© <span id="year"></span> GiveYoung.org</span><span>A Van House Foundation initiative</span></footer>
+    <footer><span>Â© <span id="year"></span> GiveYoung.org</span><span>A Van House Foundation initiative</span></footer>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
